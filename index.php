@@ -1,100 +1,8 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-
-  <title>BravArt</title>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" type="image/png" sizes="512x512" href="images/favicon.png">
-
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
-
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-  <!-- lightbox2 css -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="hero_area">
-    <!-- header section strats -->
-    <div class="top_nav">
-      <div class="container">
-        <div class="contact_link-container">
-          <a href="https://www.google.com/maps/search/?api=1&query=Posavska+33,+Brodski+Varoš,+Croatia" target="_blank" class="contact_link1">
-            <img src="images/location.png" alt="" />
-            <span>
-              Posavska 33, Brodski Varoš
-            </span>
-          </a>
-          <a href="tel:+385912345678" class="contact_link2">
-            <img src="images/call.png" alt="" />
-            <span>
-              Kontaktirajte nas
-            </span>
-          </a>
-          <a href="mailto:info@bravart.hr" class="contact_link3">
-            <img src="images/mail.png" alt="" />
-            <span>
-              info@bravart.hr
-            </span>
-          </a>
-        </div>
-      </div>
-    </div>
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="" />
-            <span>
-              BravArt
-            </span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Početna <span class="sr-only">(trenutno)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"> O nama</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html"> Usluge </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="product.html"> Proizvodi </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Kontakt</a>
-              </li>
-            </ul>
-
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
+<?php
+$active_page = 'index';
+$page_title = 'Početna';
+include 'includes/header.php';
+?>
     <!-- slider section -->
     <section class=" slider_section ">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -115,8 +23,8 @@
                       Vaš partner za vrhunske metalne konstrukcije, preciznu strojnu obradu i ugradnju stolarije. Kvaliteta i tradicija u Brodskom Varošu.
                     </p>
                     <div class="btn-box">
-                      <a href="about.html" class="btn-1"> Pročitaj više </a>
-                      <a href="contact.html" class="btn-2">Zatražite ponudu</a>
+                      <a href="about.php" class="btn-1"> Pročitaj više </a>
+                      <a href="contact.php" class="btn-2">Zatražite ponudu</a>
                     </div>
                   </div>
                 </div>
@@ -143,8 +51,8 @@
                       Specijalizirani smo za izradu metalnih konstrukcija i strojnu obradu metala s naglaskom na preciznost i dugovječnost.
                     </p>
                     <div class="btn-box">
-                      <a href="about.html" class="btn-1"> Pročitaj više </a>
-                      <a href="contact.html" class="btn-2">Zatražite ponudu</a>
+                      <a href="about.php" class="btn-1"> Pročitaj više </a>
+                      <a href="contact.php" class="btn-2">Zatražite ponudu</a>
                     </div>
                   </div>
                 </div>
@@ -166,8 +74,8 @@
                       Vaš partner za vrhunske metalne konstrukcije, preciznu strojnu obradu i ugradnju stolarije.
                     </p>
                     <div class="btn-box">
-                      <a href="about.html" class="btn-1"> Pročitaj više </a>
-                      <a href="contact.html" class="btn-2">Zatražite ponudu</a>
+                      <a href="about.php" class="btn-1"> Pročitaj više </a>
+                      <a href="contact.php" class="btn-2">Zatražite ponudu</a>
                     </div>
                   </div>
                 </div>
@@ -218,7 +126,7 @@
               Naša stručnost obuhvaća širok spektar usluga, od precizne strojne obrade metala do ugradnje stolarije i održavanja objekata.
             </p>
             <div class="btn-box">
-              <a href="about.html">
+              <a href="about.php">
                 Pročitaj više
               </a>
             </div>
@@ -251,7 +159,7 @@
             <p>
               Projektiranje i izrada lakih i teških metalnih konstrukcija prilagođenih vašim potrebama, od industrijskih do dekorativnih elemenata.
             </p>
-            <a href="service.html">
+            <a href="service.php">
               Vidi više
             </a>
           </div>
@@ -267,7 +175,7 @@
             <p>
               Precizna strojna obrada metala, uključujući tokarenje, glodanje i bušenje, osiguravajući visoku točnost i kvalitetu finalnog proizvoda.
             </p>
-            <a href="service.html">
+            <a href="service.php">
               Vidi više
             </a>
           </div>
@@ -283,7 +191,7 @@
             <p>
               Profesionalna ugradnja metalne i druge stolarije, osiguravajući stabilnost, dugovječnost i estetsku usklađenost s vašim objektom.
             </p>
-            <a href="service.html">
+            <a href="service.php">
               Vidi više
             </a>
           </div>
@@ -421,7 +329,7 @@
           metalne <br />
           proizvode
         </h2>
-        <a href="contact.html">
+        <a href="contact.php">
           Zatražite ponudu
         </a>
       </div>
@@ -430,92 +338,8 @@
 
   <!-- end metal section -->
 
-
-
-  <!-- info section -->
-    <section class="info_section ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="info_logo">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/info-logo.png" alt="" />
-              <span>
-                BravArt
-              </span>
-            </a>
-            <p>
-              BravArt - Vaš pouzdan partner za bravarske usluge, metalne konstrukcije i strojnu obradu metala.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="info_links">
-            <h5>
-              Korisne poveznice
-            </h5>
-            <ul>
-              <li>
-                <a href="index.html">
-                  Početna
-                </a>
-              </li>
-              <li>
-                <a href="about.html">
-                  O nama
-                </a>
-              </li>
-              <li>
-                <a href="service.html">
-                  Usluge
-                </a>
-              </li>
-              <li>
-                <a href="product.html">
-                  Proizvodi
-                </a>
-              </li>
-              <li>
-                <a href="contact.html">
-                  Kontakt
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="info_info">
-            <h5>
-              Kontaktirajte nas
-            </h5>
-            <p>
-              Posavska 33,<br>
-              Brodski Varoš,<br>
-              Hrvatska
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end info_section -->
-
-
-
-
-  <!-- footer section -->
-  <footer class="container-fluid footer_section">
-    <p>
-      &copy; 2024 Sva prava pridržana. BravArt, obrt za bravarske usluge, vl. Matej Sarić
-    </p>
-  </footer>
-  <!-- footer section -->
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- lightbox2 js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-</body>
-
-</html>
+<?php
+$extra_js = '<!-- lightbox2 js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>';
+include 'includes/footer.php';
+?>
