@@ -1,6 +1,7 @@
 <?php
 $active_page = 'contact';
 $page_title = 'Kontakt';
+$meta_description = 'Kontaktirajte BravArt za upite o metalnim konstrukcijama, strojnoj obradi ili ugradnji stolarije. Tu smo za vas.';
 $body_class = 'sub_page';
 include 'includes/header.php';
 ?>
@@ -16,20 +17,24 @@ include 'includes/header.php';
       <div class="">
         <div class="row">
           <div class="col-md-6 ">
-            <form action="">
+            <form action="send_mail.php" method="POST">
               <div class="contact_form-container">
                 <div>
                   <div>
-                    <input type="text" placeholder="Ime i prezime" />
+                    <input type="text" name="name" placeholder="Ime i prezime" required />
                   </div>
                   <div>
-                    <input type="email" placeholder="E-mail" />
+                    <input type="email" name="email" placeholder="E-mail" required />
                   </div>
                   <div>
-                    <input type="text" placeholder="Broj telefona" />
+                    <input type="text" name="phone" placeholder="Broj telefona" />
                   </div>
                   <div class="">
-                    <input type="text" placeholder="Poruka" class="message_input" />
+                    <input type="text" name="message" placeholder="Poruka" class="message_input" required />
+                  </div>
+                  <!-- Honeypot field -->
+                  <div style="display:none;">
+                    <input type="text" name="website" placeholder="Leave this field empty" />
                   </div>
                   <div class=" ">
                     <button type="submit">

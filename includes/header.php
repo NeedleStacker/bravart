@@ -1,3 +1,4 @@
+<?php require_once 'config.php'; ?>
 <!DOCTYPE html>
 <html>
 
@@ -8,11 +9,11 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="keywords" content="<?php echo isset($meta_keywords) ? $meta_keywords : DEFAULT_KEYWORDS; ?>" />
+  <meta name="description" content="<?php echo isset($meta_description) ? $meta_description : DEFAULT_DESCRIPTION; ?>" />
+  <meta name="author" content="<?php echo OWNER_NAME; ?>" />
 
-  <title><?php echo isset($page_title) ? $page_title . " | BravArt" : "BravArt"; ?></title>
+  <title><?php echo isset($page_title) ? $page_title . " | " . SITE_NAME : SITE_NAME; ?></title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="512x512" href="images/favicon.png">
 
@@ -36,22 +37,22 @@
     <div class="top_nav">
       <div class="container">
         <div class="contact_link-container">
-          <a href="https://www.google.com/maps/search/?api=1&query=Posavska+33,+Brodski+Varoš,+Croatia" target="_blank" class="contact_link1">
+          <a href="https://www.google.com/maps/search/?api=1&query=<?php echo SITE_MAP_QUERY; ?>" target="_blank" class="contact_link1">
             <img src="images/location.png" alt="" />
             <span>
-              Posavska 33, Brodski Varoš
+              <?php echo SITE_ADDRESS; ?>
             </span>
           </a>
-          <a href="tel:+385912345678" class="contact_link2">
+          <a href="tel:<?php echo str_replace(' ', '', SITE_PHONE); ?>" class="contact_link2">
             <img src="images/call.png" alt="" />
             <span>
               Kontaktirajte nas
             </span>
           </a>
-          <a href="mailto:info@bravart.hr" class="contact_link3">
+          <a href="mailto:<?php echo SITE_EMAIL; ?>" class="contact_link3">
             <img src="images/mail.png" alt="" />
             <span>
-              info@bravart.hr
+              <?php echo SITE_EMAIL; ?>
             </span>
           </a>
         </div>
@@ -63,7 +64,7 @@
           <a class="navbar-brand" href="index.php">
             <img src="images/logo.png" alt="" />
             <span>
-              BravArt
+              <?php echo SITE_NAME; ?>
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

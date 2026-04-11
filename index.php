@@ -1,6 +1,7 @@
 <?php
 $active_page = 'index';
 $page_title = 'Početna';
+$meta_description = 'Vrhunske bravarske usluge, metalne konstrukcije i strojna obrada metala u Slavonskom Brodu. BravArt - vaš pouzdan partner.';
 include 'includes/header.php';
 ?>
     <!-- slider section -->
@@ -13,7 +14,7 @@ include 'includes/header.php';
                 <div class="col-md-7">
                   <div class="detail-box">
                     <h1>
-                      BravArt
+                      <?php echo SITE_NAME; ?>
                       <br />
                       <span>
                         Bravarske usluge
@@ -42,7 +43,7 @@ include 'includes/header.php';
                 <div class="col-md-7">
                   <div class="detail-box">
                     <h1>
-                      BravArt <br />
+                      <?php echo SITE_NAME; ?> <br />
                       <span>
                         Kvaliteta i tradicija
                       </span>
@@ -69,7 +70,7 @@ include 'includes/header.php';
               <div class="row">
                 <div class="col-md-7">
                   <div class="detail-box">
-                    <h1>BravArt<br /><span>Bravarske usluge</span></h1>
+                    <h1><?php echo SITE_NAME; ?><br /><span>Bravarske usluge</span></h1>
                     <p>
                       Vaš partner za vrhunske metalne konstrukcije, preciznu strojnu obradu i ugradnju stolarije.
                     </p>
@@ -105,7 +106,7 @@ include 'includes/header.php';
   <section class="about_section layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2><span>O</span> BravArt-u</h2>
+        <h2><span>O</span> <?php echo SITE_NAME; ?>-u</h2>
       </div>
       <div class="row">
         <div class="col-md-6 px-0">
@@ -121,7 +122,7 @@ include 'includes/header.php';
               Vrhunska obrada metala
             </h3>
             <p>
-              BravArt je specijalizirani obrt za bravarske usluge pod vodstvom vlasnika Mateja Sarića.
+              <?php echo SITE_NAME; ?> je specijalizirani obrt za bravarske usluge pod vodstvom vlasnika <?php echo OWNER_NAME; ?>.
               Smješteni u Brodskom Varošu, posvećeni smo pružanju visokokvalitetnih rješenja u proizvodnji metalnih konstrukcija i njihovih dijelova.
               Naša stručnost obuhvaća širok spektar usluga, od precizne strojne obrade metala do ugradnje stolarije i održavanja objekata.
             </p>
@@ -300,7 +301,7 @@ include 'includes/header.php';
                   Ivan Horvat
                 </h4>
                 <p>
-                  Vrlo profesionalna usluga i vrhunska izrada. Toplo preporučujem BravArt za sve bravarske radove.
+                  Vrlo profesionalna usluga i vrhunska izrada. Toplo preporučujem <?php echo SITE_NAME; ?> za sve bravarske radove.
                 </p>
               </div>
             </div>
