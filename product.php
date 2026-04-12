@@ -1,6 +1,7 @@
 <?php
 $active_page = 'product';
 $page_title = 'Proizvodi';
+$meta_description = 'Pregledajte naše proizvode - od industrijskih metalnih elemenata do unikatnih bravarskih rješenja.';
 $body_class = 'sub_page';
 $extra_css = '<!-- lightbox2 css -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />';

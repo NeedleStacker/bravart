@@ -7,11 +7,11 @@
             <a class="navbar-brand" href="index.php">
               <img src="images/info-logo.png" alt="" />
               <span>
-                BravArt
+                <?php echo SITE_NAME; ?>
               </span>
             </a>
             <p>
-              BravArt - Vaš pouzdan partner za bravarske usluge, metalne konstrukcije i strojnu obradu metala.
+              <?php echo SITE_NAME; ?> - Vaš pouzdan partner za bravarske usluge, metalne konstrukcije i strojnu obradu metala.
             </p>
           </div>
         </div>
@@ -55,9 +55,7 @@
               Kontaktirajte nas
             </h5>
             <p>
-              Posavska 33,<br>
-              Brodski Varoš,<br>
-              Hrvatska
+              <?php echo str_replace(', ', ',<br>', SITE_ADDRESS); ?>
             </p>
           </div>
         </div>
@@ -70,7 +68,7 @@
   <!-- footer section -->
   <footer class="container-fluid footer_section">
     <p>
-      &copy; <?php echo date("Y"); ?> <a href="copyright.php">Sva prava pridržana</a>. BravArt, obrt za bravarske usluge, vl. Matej Sarić
+      &copy; <?php echo date("Y"); ?> <a href="copyright.php">Sva prava pridržana</a>. <?php echo SITE_NAME; ?>, obrt za bravarske usluge, vl. <?php echo OWNER_NAME; ?>
     </p>
   </footer>
   <!-- footer section -->

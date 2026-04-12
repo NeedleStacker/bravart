@@ -1,6 +1,7 @@
 <?php
 $active_page = 'service';
 $page_title = 'Usluge';
+$meta_description = 'Nudimo širok spektar usluga: izradu metalnih konstrukcija, strojnu obradu metala, ugradnju stolarije i održavanje.';
 $body_class = 'sub_page';
 include 'includes/header.php';
 ?>
