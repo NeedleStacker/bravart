@@ -18,46 +18,25 @@ include 'includes/header.php';
         </h2>
       </div>
       <div class="product_container">
-        <div class="box">
-          <a href="images/p-1.jpg" data-lightbox="gallery" data-title="Proizvod 1">
-            <img src="images/p-1.jpg" alt="" />
-          </a>
-        </div>
-        <div class="box">
-          <a href="images/p-2.jpg" data-lightbox="gallery" data-title="Proizvod 2">
-            <img src="images/p-2.jpg" alt="" />
-          </a>
-        </div>
-        <div class="box">
-          <a href="images/p-3.jpg" data-lightbox="gallery" data-title="Proizvod 3">
-            <img src="images/p-3.jpg" alt="" />
-          </a>
-        </div>
-        <div class="box">
-          <a href="images/p-4.jpg" data-lightbox="gallery" data-title="Proizvod 4">
-            <img src="images/p-4.jpg" alt="" />
-          </a>
-        </div>
-        <div class="box">
-          <a href="images/p-5.jpg" data-lightbox="gallery" data-title="Proizvod 5">
-            <img src="images/p-5.jpg" alt="" />
-          </a>
-        </div>
-        <div class="box">
-          <a href="images/p-6.jpg" data-lightbox="gallery" data-title="Proizvod 6">
-            <img src="images/p-6.jpg" alt="" />
-          </a>
-        </div>
-        <div class="box">
-          <a href="images/p-7.jpg" data-lightbox="gallery" data-title="Proizvod 7">
-            <img src="images/p-7.jpg" alt="" />
-          </a>
-        </div>
-        <div class="box">
-          <a href="images/p-8.jpg" data-lightbox="gallery" data-title="Proizvod 8">
-            <img src="images/p-8.jpg" alt="" />
-          </a>
-        </div>
+        <?php
+        $dir = "images/products/";
+        $images = glob($dir . "*.{jpg,jpeg,png,gif}", GLOB_BRACE);
+
+        foreach($images as $image) {
+            $filename = basename($image);
+            // Remove leading numbers, extensions and replace underscores with spaces
+            $title = preg_replace('/^\d+/', '', $filename);
+            $title = pathinfo($title, PATHINFO_FILENAME);
+            $title = str_replace('_', ' ', $title);
+            $title = ucfirst($title);
+
+            echo '<div class="box">';
+            echo '  <a href="' . $image . '" data-lightbox="gallery" data-title="' . $title . '">';
+            echo '    <img src="' . $image . '" alt="' . $title . '" />';
+            echo '  </a>';
+            echo '</div>';
+        }
+        ?>
       </div>
 
     </div>

@@ -427,12 +427,12 @@ a:focus {
 }
 
 .service_section {
-  background-color: #031652;
+  background-color: #ffffff;
   margin-bottom: 90px;
 }
 
 .service_section .heading_container {
-  color: #ffffff;
+  color: #000000;
 }
 
 .service_section .service_container {
@@ -518,6 +518,8 @@ a:focus {
 
 .product_section .product_container .box img {
   width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 .product_section .btn-box {
