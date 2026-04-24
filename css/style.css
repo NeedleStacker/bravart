@@ -125,7 +125,7 @@ body {
 }
 
 .custom_nav-container.navbar-expand-lg {
-  z-index: 99999;
+  z-index: 1000;
   padding: 0;
   -webkit-box-align: start;
       -ms-flex-align: start;
