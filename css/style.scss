@@ -260,6 +260,7 @@ a:focus {
   height: calc(100% - 115px);
   justify-content: center;
   background-image: url(../images/slider-bg.jpg);
+  background-size: cover;
 
   .row {
     align-items: center;
@@ -372,6 +373,8 @@ a:focus {
     .img-box {
       img {
         width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
       }
     }
 
@@ -398,11 +401,12 @@ a:focus {
 // service section
 
 .service_section {
-  background-color: $primary1;
+  background-color: #ffffff;
   margin-bottom: 90px;
+  color: #000000;
 
   .heading_container {
-    color: $white;
+    color: #000000;
   }
 
   .service_container {
@@ -430,6 +434,11 @@ a:focus {
           font-weight: bold;
           text-transform: uppercase;
           margin-bottom: 20px;
+          color: #000000;
+        }
+
+        p {
+          color: #000000;
         }
 
         a {
@@ -470,6 +479,8 @@ a:focus {
 
       img {
         width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
       }
     }
   }

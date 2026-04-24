@@ -30,9 +30,14 @@ include 'includes/header.php';
             $title = str_replace('_', ' ', $title);
             $title = ucfirst($title);
 
+            $thumb = $dir . "thumbs/" . $filename;
+            if (!file_exists($thumb)) {
+                $thumb = $image;
+            }
+
             echo '<div class="box">';
-            echo '  <a href="' . $image . '" data-lightbox="gallery" data-title="' . $title . '">';
-            echo '    <img src="' . $image . '" alt="' . $title . '" />';
+            echo '  <a href="' . htmlspecialchars($image) . '" data-lightbox="gallery" data-title="' . htmlspecialchars($title) . '">';
+            echo '    <img src="' . htmlspecialchars($thumb) . '" alt="' . htmlspecialchars($title) . '" />';
             echo '  </a>';
             echo '</div>';
         }
