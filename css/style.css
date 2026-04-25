@@ -395,7 +395,7 @@ a:focus {
 }
 
 .about_section .img_container {
-  margin-right: -45px;
+  margin-right: 0;
 }
 
 .about_section .img_container .img-box img {
