@@ -58,7 +58,7 @@ include 'includes/header.php';
         </div>
         <div class="box b1">
           <div class="img-box">
-            <img src="images/s-1.jpg" alt="" />
+            <img src="images/s-4.jpg" alt="" />
           </div>
           <div class="detail-box">
             <h6>
@@ -71,7 +71,7 @@ include 'includes/header.php';
         </div>
         <div class="box b2">
           <div class="img-box">
-            <img src="images/s-2.jpg" alt="" />
+            <img src="images/s-5.jpg" alt="" />
           </div>
           <div class="detail-box">
             <h6>
@@ -84,7 +84,7 @@ include 'includes/header.php';
         </div>
         <div class="box b3">
           <div class="img-box">
-            <img src="images/s-3.jpg" alt="" />
+            <img src="images/s-6.jpg" alt="" />
           </div>
           <div class="detail-box">
             <h6>
