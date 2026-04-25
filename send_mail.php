@@ -27,16 +27,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
 
     try {
+        $config = require 'config.php';
+
         // SMTP Settings
-        // Note: Actual password and specific port should be configured by the user in a secure way.
-        // For now, using placeholders as per the task description.
         $mail->isSMTP();
         $mail->Host       = 'mail.bravart.hr';
         $mail->SMTPAuth   = true;
         $mail->Username   = SITE_EMAIL;
-        $mail->Password   = 'VAŠA_LOZINKA'; // USER NEEDS TO SET THIS
+        $mail->Password   = $config['SMTP_PASSWORD'];
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port       = 587;
+        $mail->Port       = $config['SMTP_PORT'];
         $mail->CharSet    = 'UTF-8';
 
         // Recipients
