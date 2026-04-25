@@ -66,6 +66,10 @@
     flex-direction: column-reverse;
   }
 
+  .about_section .img_container {
+    margin: 0 -15px;
+  }
+
   .service_section .service_container {
     flex-wrap: wrap;
   }
