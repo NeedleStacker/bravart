@@ -1,6 +1,6 @@
 $white: #ffffff;
 $black: #000000;
-$primary1: #1c1b19;
+$primary1: #031652;
 $primary2: #fc0909;
 
 @mixin main-font {
@@ -232,8 +232,7 @@ a:focus {
   align-items: center;
 
   img {
-    width: 80px;
-    max-width: 100%;
+    width: 120px;
   }
 
   span {
@@ -260,7 +259,7 @@ a:focus {
   flex-direction: column;
   height: calc(100% - 115px);
   justify-content: center;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/slider-bg.jpg);
   background-size: cover;
 
   .container {
@@ -671,7 +670,7 @@ a:focus {
 
 // info section
 .info_section {
-  background-color: #1c1b19;
+  background-color: #010b2c;
   color: $white;
   padding: 90px 0 45px 0;
 
@@ -686,9 +685,12 @@ a:focus {
     align-items: flex-start;
 
     .navbar-brand {
+      flex-direction: row;
+      align-items: center;
 
       img {
-        width: 100px;
+        width: 60px;
+        margin-right: 10px;
       }
 
       span {
@@ -762,7 +764,7 @@ a:focus {
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: #1c1b19;
+  background-color: #010b2c;
 }
 
 .footer_section p {
