@@ -17,7 +17,7 @@ include 'includes/header.php';
       <div class="">
         <div class="row">
           <div class="col-md-6 ">
-            <form action="send_mail.php" method="POST">
+            <form id="contactForm">
               <div class="contact_form-container">
                 <div>
                   <div>
@@ -36,8 +36,9 @@ include 'includes/header.php';
                   <div style="display:none;">
                     <input type="text" name="website" placeholder="Leave this field empty" />
                   </div>
+                  <div id="formResponse" style="margin-bottom: 15px; display: none; padding: 10px; border-radius: 5px;"></div>
                   <div class=" ">
-                    <button type="submit">
+                    <button type="submit" id="submitBtn">
                       Pošalji
                     </button>
                   </div>
@@ -57,4 +58,44 @@ include 'includes/header.php';
 
   <!-- end contact section -->
 
-<?php include 'includes/footer.php'; ?>
+<?php
+$extra_js = '
+<script>
+$(document).ready(function() {
+    $("#contactForm").on("submit", function(e) {
+        e.preventDefault();
+
+        var form = $(this);
+        var submitBtn = $("#submitBtn");
+        var responseDiv = $("#formResponse");
+
+        submitBtn.prop("disabled", true).text("Slanje...");
+        responseDiv.fadeOut();
+
+        $.ajax({
+            type: "POST",
+            url: "send_mail.php",
+            data: form.serialize(),
+            dataType: "json",
+            success: function(response) {
+                responseDiv.text(response.message).fadeIn();
+                if (response.status === "success") {
+                    responseDiv.css({"background-color": "#d4edda", "color": "#155724", "border": "1px solid #c3e6cb"});
+                    form[0].reset();
+                } else {
+                    responseDiv.css({"background-color": "#f8d7da", "color": "#721c24", "border": "1px solid #f5c6cb"});
+                }
+            },
+            error: function() {
+                responseDiv.text("Došlo je do greške pri slanju. Molimo pokušajte ponovno.").css({"background-color": "#f8d7da", "color": "#721c24", "border": "1px solid #f5c6cb"}).fadeIn();
+            },
+            complete: function() {
+                submitBtn.prop("disabled", false).text("Pošalji");
+            }
+        });
+    });
+});
+</script>
+';
+include 'includes/footer.php';
+?>
