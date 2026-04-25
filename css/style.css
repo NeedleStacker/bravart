@@ -219,7 +219,7 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 80px;
+  width: 120px;
   max-width: 100%;
 }
 
@@ -253,7 +253,7 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/slider-bg.jpg);
 }
 
 .slider_section .container {
@@ -796,8 +796,19 @@ a:focus {
           align-items: flex-start;
 }
 
+.info_section .info_logo .navbar-brand {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .info_section .info_logo .navbar-brand img {
-  width: 100px;
+  width: 60px;
+  margin-right: 10px;
 }
 
 .info_section .info_logo .navbar-brand span {

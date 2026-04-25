@@ -2,7 +2,7 @@
     <section class="info_section ">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="info_logo">
             <a class="navbar-brand" href="index.php">
               <img src="images/info-logo.png" alt="" />
@@ -15,7 +15,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="info_links">
             <h5>
               Korisne poveznice
@@ -47,16 +47,6 @@
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="info_info">
-            <h5>
-              Kontaktirajte nas
-            </h5>
-            <p>
-              <?php echo str_replace(', ', ',<br>', SITE_ADDRESS); ?>
-            </p>
           </div>
         </div>
       </div>
