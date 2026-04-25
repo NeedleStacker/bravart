@@ -11,7 +11,7 @@
               </span>
             </a>
             <p>
-              <?php echo SITE_NAME; ?> - Vaš pouzdan partner za bravarske usluge, metalne konstrukcije i strojnu obradu metala.
+              <?php echo SITE_NAME; ?> - Vaš stručnjak za ALU i kovane ograde, nadstrešnice te moderne metalne konstrukcije.
             </p>
           </div>
         </div>
