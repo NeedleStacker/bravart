@@ -150,7 +150,7 @@ body {
 }
 
 .custom_nav-container.navbar-expand-lg {
-  z-index: 1000;
+  z-index: 10;
   padding: 0;
   align-items: flex-start;
 
@@ -259,8 +259,14 @@ a:focus {
   flex-direction: column;
   height: calc(100% - 115px);
   justify-content: center;
-  background-image: url(../images/slider-bg.jpg);
+  background-image: url(../images/hero-bg.jpg);
   background-size: cover;
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 35px;
+    border-radius: 10px;
+  }
 
   .row {
     align-items: center;
