@@ -28,7 +28,7 @@ include 'includes/header.php';
               Naša priča
             </h3>
             <p>
-              <?php echo SITE_NAME; ?> je moderan obrt osnovan 2024. godine, vođen strašću prema metalu i željom za stvaranjem vrhunskih proizvoda. Smješteni u Brodskom Varošu, specijalizirani smo za izradu i montažu visokokvalitetnih ograda i metalnih konstrukcija.
+              <?php echo SITE_NAME; ?> je moderan obrt osnovan 2026. godine, vođen strašću prema metalu i željom za stvaranjem vrhunskih proizvoda. Smješteni u Brodskom Varošu, specijalizirani smo za izradu i montažu visokokvalitetnih ograda i metalnih konstrukcija.
             </p>
             <p>
               Vlasnik <?php echo OWNER_NAME; ?> osobno nadgleda svaki projekt, osiguravajući da svaki detalj zadovoljava najviše standarde kvalitete. Naša vizija je spojiti funkcionalnost i moderan dizajn, koristeći najnovije tehnike u obradi aluminija i čelika.
