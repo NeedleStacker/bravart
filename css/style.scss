@@ -1,6 +1,6 @@
 $white: #ffffff;
 $black: #000000;
-$primary1: #031652;
+$primary1: #1c1b19;
 $primary2: #fc0909;
 
 @mixin main-font {
@@ -232,7 +232,8 @@ a:focus {
   align-items: center;
 
   img {
-    width: 40px;
+    width: 80px;
+    max-width: 100%;
   }
 
   span {
@@ -670,7 +671,7 @@ a:focus {
 
 // info section
 .info_section {
-  background-color: #010b2c;
+  background-color: #1c1b19;
   color: $white;
   padding: 90px 0 45px 0;
 
@@ -687,7 +688,7 @@ a:focus {
     .navbar-brand {
 
       img {
-        width: 45px;
+        width: 100px;
       }
 
       span {
@@ -761,7 +762,7 @@ a:focus {
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: #010b2c;
+  background-color: #1c1b19;
 }
 
 .footer_section p {

@@ -1,7 +1,7 @@
 <?php
 $active_page = 'service';
 $page_title = 'Usluge';
-$meta_description = 'Nudimo širok spektar usluga: izradu metalnih konstrukcija, strojnu obradu metala, ugradnju stolarije i održavanje.';
+$meta_description = 'Nudimo širok spektar usluga: ALU i kovane ograde, nadstrešnice, metalne konstrukcije, staklene ograde i rješenja po mjeri.';
 $body_class = 'sub_page';
 include 'includes/header.php';
 ?>
@@ -23,10 +23,10 @@ include 'includes/header.php';
           </div>
           <div class="detail-box">
             <h6>
-              Metalne konstrukcije
+              ALU Ograde
             </h6>
             <p>
-              Projektiranje i izrada lakih i teških metalnih konstrukcija prilagođenih vašim potrebama, od industrijskih do dekorativnih elemenata.
+              Moderne i dugovječne aluminijske ograde koje ne zahtijevaju održavanje. Savršen spoj estetike i funkcionalnosti za vaš dom.
             </p>
           </div>
         </div>
@@ -36,10 +36,10 @@ include 'includes/header.php';
           </div>
           <div class="detail-box">
             <h6>
-              Strojna obrada
+              Kovane Ograde
             </h6>
             <p>
-              Precizna strojna obrada metala, uključujući tokarenje, glodanje i bušenje, osiguravajući visoku točnost i kvalitetu finalnog proizvoda.
+              Tradicionalne kovane ograde vrhunske izrade. Svaki projekt je unikatan i prilagođen klasičnom ili modernom stilu gradnje.
             </p>
           </div>
         </div>
@@ -49,10 +49,10 @@ include 'includes/header.php';
           </div>
           <div class="detail-box">
             <h6>
-              Ugradnja stolarije
+              Nadstrešnice
             </h6>
             <p>
-              Profesionalna ugradnja metalne i druge stolarije, osiguravajući stabilnost, dugovječnost i estetsku usklađenost s vašim objektom.
+              Izrada metalnih nadstrešnica za automobile, terase i ulaze. Koristimo najkvalitetnije materijale koji jamče otpornost na sve vremenske uvjete.
             </p>
           </div>
         </div>
@@ -62,10 +62,10 @@ include 'includes/header.php';
           </div>
           <div class="detail-box">
             <h6>
-              Popravak i održavanje
+              Metalne Konstrukcije
             </h6>
             <p>
-              Servisiranje i održavanje svih vrsta metalnih proizvoda i opreme, produžujući im vijek trajanja i osiguravajući funkcionalnost.
+              Projektiranje i izrada metalnih konstrukcija za razne namjene. Od industrijskih hala do manjih pomoćnih objekata.
             </p>
           </div>
         </div>
@@ -75,10 +75,10 @@ include 'includes/header.php';
           </div>
           <div class="detail-box">
             <h6>
-              Tehničko ispitivanje
+              Staklene Ograde
             </h6>
             <p>
-              Vršenje tehničkih ispitivanja i analiza metalnih elemenata kako bi se osigurala usklađenost sa standardima sigurnosti i kvalitete.
+              Moderna rješenja sa staklenim panelima za maksimalnu prozirnost i eleganciju. Idealno za balkone, galerije i unutarnja stubišta.
             </p>
           </div>
         </div>
@@ -88,10 +88,10 @@ include 'includes/header.php';
           </div>
           <div class="detail-box">
             <h6>
-              Specijalizirani radovi
+              Rješenja po mjeri
             </h6>
             <p>
-              Nudimo razne druge specijalizirane građevinske djelatnosti i bravarske usluge prema specifičnim zahtjevima klijenata.
+              Imate specifičnu ideju? Naš tim će pretvoriti vaše zamisli u stvarnost koristeći moderne tehnike obrade metala.
             </p>
           </div>
         </div>

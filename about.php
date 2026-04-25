@@ -1,7 +1,7 @@
 <?php
 $active_page = 'about';
 $page_title = 'O nama';
-$meta_description = 'Saznajte više o BravArt obrtu, našoj tradiciji i predanosti kvaliteti u izradi metalnih konstrukcija.';
+$meta_description = 'Saznajte više o BravArt obrtu, našoj viziji i predanosti vrhunskoj kvaliteti u izradi ograda i metalnih konstrukcija.';
 $body_class = 'sub_page';
 include 'includes/header.php';
 ?>
@@ -28,13 +28,13 @@ include 'includes/header.php';
               Naša priča
             </h3>
             <p>
-              <?php echo SITE_NAME; ?> je rezultat strasti prema metalu i predanosti vrhunskoj izradi. Kao obrt sa sjedištem u Brodskom Varošu, fokusirani smo na pružanje pouzdanih i trajnih bravarskih rješenja za naše klijente.
+              <?php echo SITE_NAME; ?> je moderan obrt osnovan 2024. godine, vođen strašću prema metalu i željom za stvaranjem vrhunskih proizvoda. Smješteni u Brodskom Varošu, specijalizirani smo za izradu i montažu visokokvalitetnih ograda i metalnih konstrukcija.
             </p>
             <p>
-              Vlasnik <?php echo OWNER_NAME; ?> jamči kvalitetu kroz osobni pristup svakom projektu. Bilo da se radi o proizvodnji složenih metalnih konstrukcija, strojnoj obradi metala ili ugradnji precizne stolarije, <?php echo SITE_NAME; ?> koristi suvremene metode i opremu kako bi osigurao izvrsnost u svakom detalju.
+              Vlasnik <?php echo OWNER_NAME; ?> osobno nadgleda svaki projekt, osiguravajući da svaki detalj zadovoljava najviše standarde kvalitete. Naša vizija je spojiti funkcionalnost i moderan dizajn, koristeći najnovije tehnike u obradi aluminija i čelika.
             </p>
             <p>
-              Naša ponuda uključuje i popravak te održavanje proizvoda od metala, tehničko ispitivanje i analizu, te ostale specijalizirane građevinske djelatnosti. Cilj nam je biti vaš prvi izbor kada su u pitanju metalne konstrukcije i bravarski radovi.
+              Specijalizirani smo za ALU ograde koje ne zahtijevaju održavanje, tradicionalne kovane ograde, moderne staklene ograde te izradu čvrstih nadstrešnica i konstrukcija po mjeri. Iako smo novi na tržištu, naša predanost i preciznost već su prepoznati od strane naših klijenata. Cilj nam je postati vaš prvi izbor za moderna i trajna rješenja od metala.
             </p>
           </div>
         </div>

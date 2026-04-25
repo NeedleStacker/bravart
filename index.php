@@ -1,7 +1,7 @@
 <?php
 $active_page = 'index';
 $page_title = 'Početna';
-$meta_description = 'Vrhunske bravarske usluge, metalne konstrukcije i strojna obrada metala u Slavonskom Brodu. BravArt - vaš pouzdan partner.';
+$meta_description = 'Vrhunske bravarske usluge, ALU i kovane ograde, nadstrešnice i metalne konstrukcije u Slavonskom Brodu. BravArt - vaš pouzdan partner.';
 include 'includes/header.php';
 ?>
     <!-- slider section -->
@@ -18,7 +18,7 @@ include 'includes/header.php';
                 </span>
               </h1>
               <p>
-                Vaš partner za vrhunske metalne konstrukcije, preciznu strojnu obradu i ugradnju stolarije. Kvaliteta i tradicija u Brodskom Varošu.
+                Vaš stručnjak za moderne metalne konstrukcije, ALU i kovane ograde, nadstrešnice te staklene ograde. Vrhunska izvedba prilagođena vašim željama.
               </p>
               <div class="btn-box">
                 <a href="about.php" class="btn-1"> Pročitaj više </a>
@@ -53,10 +53,10 @@ include 'includes/header.php';
           </div>
           <div class="detail-box">
             <h6>
-              Metalne konstrukcije
+              ALU i kovane ograde
             </h6>
             <p>
-              Projektiranje i izrada lakih i teških metalnih konstrukcija prilagođenih vašim potrebama, od industrijskih do dekorativnih elemenata.
+              Izrada i montaža modernih aluminijskih i tradicionalnih kovanih ograda koje pružaju sigurnost i estetsku vrijednost vašem domu.
             </p>
             <a href="service.php">
               Vidi više
@@ -69,10 +69,10 @@ include 'includes/header.php';
           </div>
           <div class="detail-box">
             <h6>
-              Strojna obrada
+              Nadstrešnice i konstrukcije
             </h6>
             <p>
-              Precizna strojna obrada metala, uključujući tokarenje, glodanje i bušenje, osiguravajući visoku točnost i kvalitetu finalnog proizvoda.
+              Projektiranje i izrada izdržljivih metalnih nadstrešnica i konstrukcija po mjeri, savršeno prilagođenih vašem prostoru.
             </p>
             <a href="service.php">
               Vidi više
@@ -85,10 +85,10 @@ include 'includes/header.php';
           </div>
           <div class="detail-box">
             <h6>
-              Ugradnja stolarije
+              Staklene ograde
             </h6>
             <p>
-              Profesionalna ugradnja metalne i druge stolarije, osiguravajući stabilnost, dugovječnost i estetsku usklađenost s vašim objektom.
+              Elegantna rješenja sa staklenim ogradama za balkone, terase i stubišta, kombinirajući moderan dizajn i maksimalnu sigurnost.
             </p>
             <a href="service.php">
               Vidi više
@@ -132,7 +132,7 @@ include 'includes/header.php';
                   Ana Kovač
                 </h4>
                 <p>
-                  Sve pohvale za strojnu obradu dijelova. Kvaliteta je na najvišoj razini.
+                  Sve pohvale za izradu i montažu ograde. Kvaliteta je na najvišoj razini, a dizajn je moderan i upravo ono što smo željeli.
                 </p>
               </div>
             </div>

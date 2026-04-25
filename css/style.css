@@ -61,7 +61,7 @@ body {
 }
 
 .hero_area .top_nav {
-  background-color: #031652;
+  background-color: #1c1b19;
   padding: 10px 0;
 }
 
@@ -141,12 +141,12 @@ body {
 }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item:hover .nav-link, .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active .nav-link {
-  background-color: #031652;
+  background-color: #1c1b19;
   color: #ffffff;
 }
 
 .custom_nav-container.navbar-expand-lg .form-inline input {
-  background-color: #031652;
+  background-color: #1c1b19;
   border: none;
   outline: none;
   width: 250px;
@@ -219,7 +219,8 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 40px;
+  width: 80px;
+  max-width: 100%;
 }
 
 .navbar-brand span {
@@ -275,7 +276,7 @@ a:focus {
 .slider_section .detail-box h1 {
   text-transform: uppercase;
   font-size: 4rem;
-  color: #031652;
+  color: #1c1b19;
   line-height: 60px;
   font-weight: 600;
 }
@@ -304,7 +305,7 @@ a:focus {
 .slider_section .detail-box .btn-box .btn-1 {
   display: inline-block;
   padding: 10px 35px;
-  background-color: #031652;
+  background-color: #1c1b19;
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -313,8 +314,8 @@ a:focus {
 
 .slider_section .detail-box .btn-box .btn-1:hover {
   background-color: transparent;
-  border-color: #031652;
-  color: #031652;
+  border-color: #1c1b19;
+  color: #1c1b19;
 }
 
 .slider_section .detail-box .btn-box .btn-2 {
@@ -367,7 +368,7 @@ a:focus {
 }
 
 .slider_section ol.carousel-indicators li.active {
-  background-color: #031652;
+  background-color: #1c1b19;
 }
 
 .about_section .row {
@@ -384,7 +385,7 @@ a:focus {
 }
 
 .about_section .heading_container h2 span {
-  color: #031652;
+  color: #1c1b19;
 }
 
 .about_section .heading_container h2::before {
@@ -772,7 +773,7 @@ a:focus {
 
 /* end contact section */
 .info_section {
-  background-color: #010b2c;
+  background-color: #1c1b19;
   color: #ffffff;
   padding: 90px 0 45px 0;
 }
@@ -796,7 +797,7 @@ a:focus {
 }
 
 .info_section .info_logo .navbar-brand img {
-  width: 45px;
+  width: 100px;
 }
 
 .info_section .info_logo .navbar-brand span {
@@ -857,7 +858,7 @@ a:focus {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px;
-  background-color: #010b2c;
+  background-color: #1c1b19;
 }
 
 .footer_section p {
