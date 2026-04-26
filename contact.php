@@ -3,6 +3,8 @@ $active_page = 'contact';
 $page_title = 'Kontakt';
 $meta_description = 'Kontaktirajte BravArt za upite o metalnim konstrukcijama, strojnoj obradi ili ugradnji stolarije. Tu smo za vas.';
 $body_class = 'sub_page';
+include 'includes/captcha_helper.php';
+$captcha_question = getCaptchaQuestion();
 include 'includes/header.php';
 ?>
   </div>
@@ -35,6 +37,10 @@ include 'includes/header.php';
                   <!-- Honeypot field -->
                   <div style="display:none;">
                     <input type="text" name="website" placeholder="Leave this field empty" />
+                  </div>
+                  <div class="captcha-container" style="margin-bottom: 15px;">
+                    <label for="captcha" id="captchaLabel">Koliko je <?php echo $captcha_question; ?> (upiši slovima)</label>
+                    <input type="text" name="captcha" id="captcha" placeholder="Odgovor slovima" required />
                   </div>
                   <div id="formResponse" style="margin-bottom: 15px; display: none; padding: 10px; border-radius: 5px;"></div>
                   <div class=" ">
@@ -84,6 +90,11 @@ $(document).ready(function() {
                     form[0].reset();
                 } else {
                     responseDiv.css({"background-color": "#f8d7da", "color": "#721c24", "border": "1px solid #f5c6cb"});
+                }
+
+                if (response.new_captcha) {
+                    $("#captchaLabel").text("Koliko je " + response.new_captcha + " (upiši slovima)");
+                    $("#captcha").val("");
                 }
             },
             error: function() {
