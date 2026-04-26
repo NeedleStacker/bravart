@@ -4,6 +4,7 @@ use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
 require 'includes/config.php';
+require 'includes/captcha_helper.php';
 
 header('Content-Type: application/json');
 
@@ -11,6 +12,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Honeypot check
     if (!empty($_POST['website'])) {
         echo json_encode(['status' => 'error', 'message' => 'Spam detection triggered.']);
+        exit;
+    }
+
+    // Captcha check
+    $user_captcha = mb_strtolower(trim($_POST['captcha'] ?? ''), 'UTF-8');
+    $correct_captcha = $_SESSION['captcha_answer'] ?? '';
+
+    if (empty($user_captcha) || $user_captcha !== $correct_captcha) {
+        $new_q = getCaptchaQuestion();
+        echo json_encode(['status' => 'error', 'message' => 'Pogrešan odgovor na sigurnosno pitanje.', 'new_captcha' => $new_q]);
         exit;
     }
 
@@ -56,9 +67,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ";
 
         $mail->send();
-        echo json_encode(['status' => 'success', 'message' => 'Vaša poruka je uspješno poslana!']);
+        $new_q = getCaptchaQuestion();
+        echo json_encode(['status' => 'success', 'message' => 'Vaša poruka je uspješno poslana!', 'new_captcha' => $new_q]);
     } catch (Exception $e) {
-        echo json_encode(['status' => 'error', 'message' => "Poruka nije mogla biti poslana. Greška: {$mail->ErrorInfo}"]);
+        $new_q = getCaptchaQuestion();
+        echo json_encode(['status' => 'error', 'message' => "Poruka nije mogla biti poslana. Greška: {$mail->ErrorInfo}", 'new_captcha' => $new_q]);
     }
 } else {
     echo json_encode(['status' => 'error', 'message' => 'Nevažeći zahtjev.']);
