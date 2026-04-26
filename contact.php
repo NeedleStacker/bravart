@@ -100,9 +100,10 @@ $(document).ready(function() {
                     $("#captcha").val("");
                 }
             },
-            error: function() {
-                responseDiv.text("Došlo je do greške pri slanju. Molimo pokušajte ponovno.").css({"background-color": "#f8d7da", "color": "#721c24", "border": "1px solid #f5c6cb"}).fadeIn();
-            },
+            error: function(xhr) {
+				console.log("STATUS:", xhr.status);
+				console.log("RESPONSE:", xhr.responseText);
+			},
             complete: function() {
                 submitBtn.prop("disabled", false).text("Pošalji");
             }

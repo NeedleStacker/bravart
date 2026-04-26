@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -7,7 +9,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
-require 'includes/config.php';
+$config = require __DIR__ . '/includes/config.php';
 require 'includes/captcha_helper.php';
 
 header('Content-Type: application/json');
@@ -20,13 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Captcha check
-    $user_captcha = trim($_POST['captcha'] ?? '');
-    if (function_exists('mb_strtolower')) {
-        $user_captcha = mb_strtolower($user_captcha, 'UTF-8');
-    } else {
-        $user_captcha = strtolower($user_captcha);
-    }
-
+    $user_captcha = mb_strtolower(trim($_POST['captcha'] ?? ''), 'UTF-8');
     $correct_captcha = $_SESSION['captcha_answer'] ?? '';
 
     if (empty($user_captcha) || $user_captcha !== $correct_captcha) {
@@ -48,15 +44,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
 
     try {
-        $config = require 'config.php';
-
         // SMTP Settings
         $mail->isSMTP();
         $mail->Host       = $config['SMTP_HOST'];
         $mail->SMTPAuth   = true;
         $mail->Username   = SITE_EMAIL;
         $mail->Password   = $config['SMTP_PASSWORD'];
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = $config['SMTP_PORT'];
         $mail->CharSet    = 'UTF-8';
 
