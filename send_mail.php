@@ -31,11 +31,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // SMTP Settings
         $mail->isSMTP();
-        $mail->Host       = 'mail.bravart.hr';
+        $mail->Host       = $config['SMTP_HOST'];
         $mail->SMTPAuth   = true;
         $mail->Username   = SITE_EMAIL;
         $mail->Password   = $config['SMTP_PASSWORD'];
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = $config['SMTP_PORT'];
         $mail->CharSet    = 'UTF-8';
 
