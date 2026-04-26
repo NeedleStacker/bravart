@@ -1,4 +1,7 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 $active_page = 'contact';
 $page_title = 'Kontakt';
 $meta_description = 'Kontaktirajte BravArt za upite o metalnim konstrukcijama, strojnoj obradi ili ugradnji stolarije. Tu smo za vas.';
