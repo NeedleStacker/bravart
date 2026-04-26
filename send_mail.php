@@ -1,4 +1,8 @@
 <?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -16,7 +20,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Captcha check
-    $user_captcha = mb_strtolower(trim($_POST['captcha'] ?? ''), 'UTF-8');
+    $user_captcha = trim($_POST['captcha'] ?? '');
+    if (function_exists('mb_strtolower')) {
+        $user_captcha = mb_strtolower($user_captcha, 'UTF-8');
+    } else {
+        $user_captcha = strtolower($user_captcha);
+    }
+
     $correct_captcha = $_SESSION['captcha_answer'] ?? '';
 
     if (empty($user_captcha) || $user_captcha !== $correct_captcha) {
