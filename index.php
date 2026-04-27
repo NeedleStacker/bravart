@@ -6,33 +6,6 @@ include 'includes/header.php';
 ?>
     <!-- slider section -->
     <section class=" slider_section ">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="detail-box">
-              <h1>
-                <?php echo SITE_NAME; ?>
-                <br />
-                <span>
-                  Bravarske usluge
-                </span>
-              </h1>
-              <p>
-                Vaš stručnjak za moderne metalne konstrukcije, ALU i kovane ograde, nadstrešnice te staklene ograde. Vrhunska izvedba prilagođena vašim željama.
-              </p>
-              <div class="btn-box">
-                <a href="about.php" class="btn-1"> Pročitaj više </a>
-                <a href="contact.php" class="btn-2">Zatražite ponudu</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="img-box">
-              <img src="images/slider-img.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- end slider section -->
   </div>
