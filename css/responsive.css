@@ -1,10 +1,6 @@
 @media (max-width: 1120px) {}
 
 @media (max-width: 992px) {
-  .hero_area {
-    height: auto;
-  }
-
   .navbar-nav {
     align-items: center;
   }
@@ -33,7 +29,6 @@
 
   .slider_section {
     padding: 0;
-    height: calc(100vh - 75px);
   }
 
   .sub_page .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
@@ -42,24 +37,6 @@
 }
 
 @media (max-width: 768px) {
-  .slider_section ol.carousel-indicators {
-    justify-content: center;
-  }
-
-  .slider_section {
-    text-align: center;
-    height: calc(100vh - 75px);
-  }
-
-  .slider_section .img-box {
-    margin-top: 35px;
-  }
-
-  .slider_section .detail-box .btn-box {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
   .about_section .heading_container {
     margin-bottom: 0;
   }
@@ -122,23 +99,13 @@
   }
 }
 
-@media (max-width: 576px) {
-  .slider_section .detail-box h1 {
-    font-size: 3.5rem;
-    line-height: 55px;
-  }
-}
+@media (max-width: 576px) {}
 
 @media (max-width: 480px) {}
 
 @media (max-width: 420px) {}
 
-@media (max-width: 376px) {
-  .slider_section .detail-box h1 {
-    font-size: 3rem;
-    line-height: 45px;
-  }
-}
+@media (max-width: 376px) {}
 
 @media (min-width: 1200px) {
   .container {
