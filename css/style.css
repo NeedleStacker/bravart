@@ -242,6 +242,7 @@ a:focus {
 /* slider section */
 .slider_section {
   background-size: cover;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,11 +250,12 @@ a:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: calc(100% - 115px);
+  height: calc(100vh - 115px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../images/slider-bg.jpg);
+  background-image: url(../images/bg.jpg);
+  background-position: center;
 }
 
 .slider_section .container {

@@ -32,7 +32,8 @@
   }
 
   .slider_section {
-    padding: 45px 0 150px 0;
+    padding: 0;
+    height: calc(100vh - 75px);
   }
 
   .sub_page .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
@@ -47,6 +48,7 @@
 
   .slider_section {
     text-align: center;
+    height: calc(100vh - 75px);
   }
 
   .slider_section .img-box {
