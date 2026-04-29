@@ -107,11 +107,7 @@
   }
 }
 
-@media (max-width: 699px) {
-  .slider_section {
-    background-size: contain !important;
-  }
-}
+@media (max-width: 699px) {}
 
 @media (max-width: 576px) {}
 
