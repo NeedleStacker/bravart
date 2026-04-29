@@ -19,7 +19,15 @@
   }
 
   .hero_area .top_nav {
-    display: none;
+    display: block !important;
+  }
+
+  .hero_area .top_nav .contact_link-container a.contact_link2 {
+    display: none !important;
+  }
+
+  .slider_section {
+    background-image: url(../images/bg-mobile.png) !important;
   }
 
   .custom_nav-container.navbar-expand-lg {
@@ -96,6 +104,12 @@
 
   .info_section .info_form .social_box a {
     margin: 0 5px;
+  }
+}
+
+@media (max-width: 699px) {
+  .slider_section {
+    background-size: contain !important;
   }
 }
 
